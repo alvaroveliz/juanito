@@ -1,4 +1,3 @@
-# Juanito
-## The helper
+# Juanito, the helper
 
 Soon...
