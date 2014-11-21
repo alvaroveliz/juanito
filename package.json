@@ -1,0 +1,24 @@
+{
+  "name" : "juanito",
+  "version" : "0.1.0",
+  "description" : "Juanito, the helper",
+  "license" : "MIT",
+  "keywords" : [
+    "htmlparser",
+    "wordpress",
+    "themes",
+    "parse",
+    "wp"
+  ],
+  "repository" : {
+    "type" : "git",
+    "url" : "git://github.com/alvaroveliz/juanito.git"
+  },
+  "main" : "main.js",
+  "engines" : {
+    "node" : ">= 0.10"
+  },
+  "dependencies" : {
+    "cheerio" : "~0.18.0"
+  }
+}
