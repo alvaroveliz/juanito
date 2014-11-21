@@ -1,24 +1,43 @@
 {
-  "name" : "juanito",
-  "version" : "0.1.0",
-  "description" : "Juanito, the helper",
-  "license" : "MIT",
-  "keywords" : [
+  "name": "juanito",
+  "version": "0.1.0",
+  "description": "Juanito, the helper",
+  "homepage": "https://github.com/alvaroveliz/juanito",
+  "author": {
+    "name": "Alvaro Véliz",
+    "email": "yo@alvaroveliz.cl"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/alvaroveliz/juanito.git"
+  },
+  "bugs": {
+    "url": "https://github.com/alvaroveliz/juanito/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/alvaroveliz/juanito/blob/master/LICENSE"
+    }
+  ],
+  "main": "bin/juanito.js",
+  "engines": {
+    "node": ">= 0.10"
+  },
+  "keywords": [
     "htmlparser",
     "wordpress",
     "themes",
     "parse",
     "wp"
   ],
-  "repository" : {
-    "type" : "git",
-    "url" : "git://github.com/alvaroveliz/juanito.git"
+  "preferGlobal": "true",
+  "bin": {
+    "juanito": "bin/juanito.js"
   },
-  "main" : "main.js",
-  "engines" : {
-    "node" : ">= 0.10"
-  },
-  "dependencies" : {
-    "cheerio" : "~0.18.0"
+  "dependencies": {
+    "cheerio": "^0.18.0",
+    "commander": "^2.5.0",
+    "htmlparser2": "^3.8.2"
   }
 }
