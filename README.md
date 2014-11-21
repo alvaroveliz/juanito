@@ -10,3 +10,6 @@
 
   `juanito examples/index.html theme`
 
+**Install**
+
+  `npm install juanito`
