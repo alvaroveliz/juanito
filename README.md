@@ -12,7 +12,7 @@
 
 **Install**
 
-  `npm install juanito`
+  `npm -g install juanito`
 
 **Roadmap**
 
