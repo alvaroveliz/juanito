@@ -13,3 +13,10 @@
 **Install**
 
   `npm install juanito`
+
+**Roadmap**
+
+  * "The Loop" recognizing via `data-tags`
+  * Support to pages, sidebar and custom pages
+
+*This is a beta version*
