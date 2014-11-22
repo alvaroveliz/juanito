@@ -4,15 +4,15 @@
 
 **Usage**:
 
-  `juanito <file or folder> <destination>`
+  `juanito <filename|folder> <destination>`
 
-**Example 1 : File**:
+**Example 1 : Filename**:
 
-  `juanito examples/example1/index.html -d theme`
+  `juanito examples/example1/index.html theme`
 
 **Example 2 : Directory**:
 
-  `juanito examples/example2 -d theme2`
+  `juanito examples/example2 theme2`
 
 **Install**
 

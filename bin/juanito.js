@@ -9,16 +9,15 @@ var path = require('path'),
 
 program
     .version(pkg.version)
-    .option('-d, --dest <destination>', 'Destination folder')
     .parse(process.argv)
     ;
 
 if (!process.argv[2]) {
-    console.log('Error: you have to specify a filename or folder');
+    console.log('Error: you have to specify a source filename or folder');
     return false;
 }
 
-if (!program.dest) {
+if (!process.argv[3]) {
     console.log('Error: you have to specify a destination folder name');
     return false;
 }
@@ -62,8 +61,8 @@ inquirer.prompt([
             message: 'Please input the theme tags (comma separated)'
         }
     ], 
-    function(answers){
-        parser.process(process.argv[2], program.dest, answers);
+    function(themeOpts){
+        parser.process(process.argv[2], process.argv[2], themeOpts);
     }
 );
 
