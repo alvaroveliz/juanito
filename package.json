@@ -38,6 +38,7 @@
   "dependencies": {
     "cheerio": "^0.18.0",
     "commander": "^2.5.0",
-    "htmlparser2": "^3.8.2"
+    "htmlparser2": "^3.8.2",
+    "inquirer": "^0.8.0"
   }
 }
