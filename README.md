@@ -8,7 +8,7 @@
 
 **Example**:
 
-  `juanito examples/index.html theme`
+  `juanito examples/index.html -d theme`
 
 **Install**
 
