@@ -23,7 +23,7 @@
   * Page, single and functions files
   * Custom pages and custom single files
   * Sidebar files
-  * Them Configuration
+  * Theme Configuration
   * "The Loop" recognizing via `data-tags`
 
 *This is a beta version*
