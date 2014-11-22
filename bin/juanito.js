@@ -13,7 +13,7 @@ program
     ;
 
 if (!process.argv[2]) {
-    console.log('Error: you have to specify a filename');
+    console.log('Error: you have to specify a filename or folder');
     return false;
 }
 

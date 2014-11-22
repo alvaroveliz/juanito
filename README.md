@@ -6,9 +6,13 @@
 
   `juanito <file or folder> <destination>`
 
-**Example**:
+**Example 1 : File**:
 
-  `juanito examples/index.html -d theme`
+  `juanito examples/example1/index.html -d theme`
+
+**Example 2 : Directory**:
+
+  `juanito examples/example2 -d theme2`
 
 **Install**
 
@@ -16,7 +20,10 @@
 
 **Roadmap**
 
+  * Page, single and functions files
+  * Custom pages and custom single files
+  * Sidebar files
+  * Them Configuration
   * "The Loop" recognizing via `data-tags`
-  * Support to pages, sidebar and custom pages
 
 *This is a beta version*
