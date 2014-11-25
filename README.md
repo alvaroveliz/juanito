@@ -22,10 +22,11 @@
 
 **Roadmap**
 
-  * Page, single and functions files
-  * Custom pages and custom single files
-  * Sidebar files
-  * Theme Configuration
-  * "The Loop" recognizing via `data-tags`
+  - [ ] `functions.php` default configuration
+  - [ ] Menu support
+  - [ ] Sidebar support
+  - [ ] "The Loop" recognizing via `data-tags`
+  - [ ] Custom pages support
+  - [ ] Custom javascript and stylesheet files support
 
 *This is a beta version*
