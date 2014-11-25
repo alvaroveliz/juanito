@@ -6,13 +6,15 @@
 
   `juanito <filename|folder> <destination>`
 
-**Example 1 : Filename**:
+**Example 1 (Filename)**:
 
   `juanito examples/example1/index.html theme`
 
-**Example 2 : Directory**:
+**Example 2 (Directory)**:
 
   `juanito examples/example2 theme2`
+  
+  ![Example 2](https://raw.githubusercontent.com/alvaroveliz/juanito/master/examples/juanito_example.gif)
 
 **Install**
 
