@@ -26,7 +26,7 @@
   - [ ] Menu support
   - [ ] Sidebar support
   - [ ] "The Loop" recognizing via `data-tags`
-  - [ ] Custom pages support
+  - [x] Custom pages support
   - [ ] Custom javascript and stylesheet files support
 
 *This is a beta version*
