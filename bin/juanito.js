@@ -62,7 +62,7 @@ inquirer.prompt([
         }
     ], 
     function(themeOpts){
-        parser.process(process.argv[2], process.argv[2], themeOpts);
+        parser.process(process.argv[2], process.argv[3], themeOpts);
     }
 );
 
