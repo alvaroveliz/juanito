@@ -38,7 +38,7 @@
 
 **Roadmap**
 
-  - [ ] `functions.php` default configuration
+  - [x] `functions.php` default configuration
   - [ ] Menu support
   - [ ] Sidebar support
   - [ ] "The Loop" recognizing via `data-tags`
