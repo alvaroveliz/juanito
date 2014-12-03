@@ -1,6 +1,6 @@
 {
   "name": "juanito",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "description": "Juanito, the helper",
   "homepage": "https://github.com/alvaroveliz/juanito",
   "author": {
@@ -39,6 +39,8 @@
     "cheerio": "^0.18.0",
     "commander": "^2.5.0",
     "htmlparser2": "^3.8.2",
-    "inquirer": "^0.8.0"
+    "inquirer": "^0.8.0",
+    "ncp": "^1.0.1",
+    "wrench": "^1.5.8"
   }
 }
