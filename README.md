@@ -22,13 +22,19 @@
   -T, --title-tag                  Add title tag support
 </pre>
 
+**Support using data-* atributtes**
+  * `data-menu="name"` for Menus. 
+    * Ex. `<nav data-menu="main_menu"><ul><li>...</li></nav>`
+  * `data-sidebar="name"`for Sidebars
+    * Ex. `<aside data-sidebar="right_sidebar"><ul><li>...</li></aside>`
+
 **Example 1 (Filename)**:
 
   `juanito -s examples/example1/index.html -d theme`
 
 **Example 2 (Directory)**:
 
-  `juanito -s examples/example4 -d theme4`
+  `juanito -s examples/example6 -d theme6`
   
   ![Example 2](https://raw.githubusercontent.com/alvaroveliz/juanito/master/examples/juanito_example.gif)
 
@@ -36,15 +42,11 @@
 
   `npm -g install juanito`
 
-**Support using data-* atributtes**
-  * `data-menu="name"` for Menus. 
-    * Ex: `<nav data-menu="main_menu"><ul><li>...</li></nav>`
-
 **Roadmap**
 
   - [x] `functions.php` default configuration
   - [x] Menu support
-  - [ ] Sidebar support
+  - [x] Sidebar support
   - [ ] "The Loop" recognizing via `data-tags`
   - [x] Custom pages support
   - [x] Custom javascript and stylesheet files support
