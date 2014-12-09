@@ -36,10 +36,14 @@
 
   `npm -g install juanito`
 
+**Support using data-* atributtes**
+  * `data-menu="name"` for Menus. 
+    * Ex: `<nav data-menu="main_menu"><ul><li>...</li></nav>`
+
 **Roadmap**
 
   - [x] `functions.php` default configuration
-  - [ ] Menu support
+  - [x] Menu support
   - [ ] Sidebar support
   - [ ] "The Loop" recognizing via `data-tags`
   - [x] Custom pages support
