@@ -27,6 +27,8 @@
     * Ex. `<nav data-menu="main_menu"><ul><li>...</li></nav>`
   * `data-sidebar="name"`for Sidebars
     * Ex. `<aside data-sidebar="right_sidebar"><ul><li>...</li></aside>`
+  * `data-loop="name"` for The Loop
+    * Ex. `<article data-loop="last">...</article>`
 
 **Example 1 (Filename)**:
 
@@ -47,8 +49,6 @@
   - [x] `functions.php` default configuration
   - [x] Menu support
   - [x] Sidebar support
-  - [ ] "The Loop" recognizing via `data-tags`
+  - [x] "The Loop" recognizing via `data-tags`
   - [x] Custom pages support
   - [x] Custom javascript and stylesheet files support
-
-*This is a beta version*
