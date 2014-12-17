@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>This is my site</title>
+</head>
+<body>
+    <header>
+        <h1>My Site</h1>
+        <nav data-menu="main">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="page-about-us.html">About US</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="content">
+        <div id="articles">
+            <h2>Last 5 Articles</h2>
+            <article class="article" data-loop="last" data-loop-limit="5">
+                <div class="article-title">
+                    <a href="" data-loop-permalink="">
+                        <h2 data-loop-title="">Article Title</h2>    
+                    </a>
+                    <h4>By <a href="" data-loop-author="">Author</a></h4>
+                    <em data-loop-date="">December 15, 2014</em>
+                </div>
+                <div class="article-content">
+                    <p data-loop-excerpt="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis velit et maxime quos labore, laudantium alias tenetur reiciendis doloremque ipsam officiis itaque cupiditate, nam, consequatur quibusdam fugit cumque officia saepe.</p>
+                    <hr>
+                </div>
+                <div class="article-footer">
+                    <div class="article-categories" data-loop-categories="">
+                        Categories : <a href="">Cat 1</a>, <a href="">Cat 2</a>
+                    </div>
+                    <div class="article-tags" data-loop-tags="">
+                        Tags : <a href="">Tag 1</a>, <a href="">Tag 2</a>
+                    </div>
+                </div>
+            </article>
+        </div>
+
+        <aside data-sidebar="search">
+            <form action="">
+                <h2>Search</h2>
+                <input type="text">
+                <input type="submit" value="Search now">
+            </form>
+        </aside>
+    </section>
+    <footer>
+        <p>
+            My Site &copy; 2014
+        </p>
+    </footer>
+</body>
+</html>
