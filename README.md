@@ -36,7 +36,7 @@
 
 **Example 2 (Directory)**:
 
-  `juanito -s examples/example6 -d theme6`
+  `juanito -s examples/example8 -d theme8 -i`
   
   ![Example 2](https://raw.githubusercontent.com/alvaroveliz/juanito/master/examples/juanito_example.gif)
 
