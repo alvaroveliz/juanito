@@ -1,6 +1,6 @@
 # Juanito, the helper
 
-### Juanito will help you to create a WordPress Theme just using your html files
+### Juanito will help you create a WordPress theme just by using your HTML files
 
 [![NPM](https://nodei.co/npm/juanito.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/juanito/)[![NPM](https://nodei.co/npm-dl/juanito.png)](https://nodei.co/npm/juanito/)
 
@@ -11,10 +11,10 @@
 **Parameters**:
 <pre>
   -h, --help                       output usage information
-  -V, --version                    output the version number
-  -s, --source [source]            Set the template source (required)
-  -d, --destination [destination]  Set the template destination folder (required)
-  -i, --ignore-configuration       Ignore the theme configuration
+  -V, --version                    output version number
+  -s, --source [source]            Set template source (required)
+  -d, --destination [destination]  Set template destination folder (required)
+  -i, --ignore-configuration       Ignore theme configuration
   -T, --post-thumbnails            Add post thumbnail support
   -F, --post-formats               Add post formats support
   -B, --custom-background          Add custom background support
@@ -25,7 +25,7 @@
 </pre>
 
 **Support using data-* atributtes**
-  * `data-menu="name"` for Menus. 
+  * `data-menu="name"` for Menus.
     * Ex. `<nav data-menu="main_menu"><ul><li>...</li></nav>`
   * `data-sidebar="name"`for Sidebars
     * Ex. `<aside data-sidebar="right_sidebar"><ul><li>...</li></aside>`
@@ -39,7 +39,7 @@
 **Example 2 (Directory)**:
 
   `juanito -s examples/example8 -d theme8 -i`
-  
+
   ![Example 2](https://raw.githubusercontent.com/alvaroveliz/juanito/master/examples/juanito_example.gif)
 
 **Install**
@@ -56,4 +56,4 @@
   - [x] Sidebar support
   - [x] "The Loop" recognizing via `data-tags`
   - [x] Custom pages support
-  - [x] Custom javascript and stylesheet files support
+  - [x] Custom Javascript and stylesheet files support
