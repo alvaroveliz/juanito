@@ -46,9 +46,9 @@
 
 **Roadmap**
 
-  - [ ] `archive.php` support
-  - [ ] Image files support `<img src="" />`
-  - [ ] `sidebar.php` support
+  - [x] `archive.php` support
+  - [x] Image files support `<img src="" />`
+  - [x] `sidebar.php` support
   - [x] `functions.php` default configuration
   - [x] Menu support
   - [x] Sidebar support
