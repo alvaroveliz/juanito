@@ -1,6 +1,6 @@
 # Juanito, the helper
 
-### Juanito will help you to create a Wordpress Theme just using your html files
+### Juanito will help you to create a WordPress Theme just using your html files
 
 [![NPM](https://nodei.co/npm/juanito.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/juanito/)[![NPM](https://nodei.co/npm-dl/juanito.png)](https://nodei.co/npm/juanito/)
 
