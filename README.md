@@ -57,3 +57,8 @@
   - [x] "The Loop" recognizing via `data-tags`
   - [x] Custom pages support
   - [x] Custom Javascript and stylesheet files support
+  - 
+
+**Documentation**
+
+- [Check Out Our Wiki](https://github.com/alvaroveliz/juanito/wiki)
