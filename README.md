@@ -30,4 +30,4 @@
 
 **Documentation**
 
-- [Check Out Our Wiki](https://github.com/alvaroveliz/juanito/wiki)
+[Check Out Our Wiki](https://github.com/alvaroveliz/juanito/wiki)
