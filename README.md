@@ -24,24 +24,6 @@
   -T, --title-tag                  Add title tag support
 </pre>
 
-**Support using data-* atributtes**
-  * `data-menu="name"` for Menus.
-    * Ex. `<nav data-menu="main_menu"><ul><li>...</li></nav>`
-  * `data-sidebar="name"`for Sidebars
-    * Ex. `<aside data-sidebar="right_sidebar"><ul><li>...</li></aside>`
-  * `data-loop="name"` for The Loop
-    * Ex. `<article data-loop="last">...</article>`
-
-**Example 1 (Filename)**:
-
-  `juanito -s examples/example1/index.html -d theme`
-
-**Example 2 (Directory)**:
-
-  `juanito -s examples/example8 -d theme8 -i`
-
-  ![Example 2](https://raw.githubusercontent.com/alvaroveliz/juanito/master/examples/juanito_example.gif)
-
 **Install**
 
   `npm -g install juanito`
