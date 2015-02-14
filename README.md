@@ -46,19 +46,6 @@
 
   `npm -g install juanito`
 
-**Roadmap**
-
-  - [x] `archive.php` support
-  - [x] Image files support `<img src="" />`
-  - [x] `sidebar.php` support
-  - [x] `functions.php` default configuration
-  - [x] Menu support
-  - [x] Sidebar support
-  - [x] "The Loop" recognizing via `data-tags`
-  - [x] Custom pages support
-  - [x] Custom Javascript and stylesheet files support
-  - 
-
 **Documentation**
 
 - [Check Out Our Wiki](https://github.com/alvaroveliz/juanito/wiki)
