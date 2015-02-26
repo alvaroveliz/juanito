@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test</title>
+    <link rel="stylesheet" href="stylesheets/site.css">
+</head>
+<body>
+
+    <header>
+        <div id="top">
+            <div id="logo">
+                <h1>Mi Blog</h1>
+            </div>
+        </div>
+        <nav id="menu" data-menu="main">
+            <ul>
+                <li class="current_menu_page"><a href="javascript:void(0;)">Menu 1</a></li>
+                <li><a href="javascript:void(0;)">Menu 2</a></li>
+                <li><a href="javascript:void(0;)">Menu 3</a></li>
+                <li><a href="javascript:void(0;)">Menu 4</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="content">
+        <div id="main_content">
+            <h2>Los 5 últimos</h2>
+            <article data-loop="last" data-loop-limit="5">
+                <h5 data-loop-title="">Titulo</h5>
+                <em class="date" data-loop-date="">13 de Enero de 2015</em>
+                <div class="article_thumbnail" data-loop-thumbnail="">
+                    <img src="http://placehold.it/540x200" alt="">
+                </div>
+                <p data-loop-excerpt="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam necessitatibus a tempore, ut saepe atque in dolor doloribus voluptatem natus dolorum neque ab, ex et, aperiam cumque accusantium laborum deserunt!</p>
+                <hr>
+                <a href="" data-loop-permalink="">Leer Más</a>
+            </article>
+        </div>
+        <aside data-sidebar="left_sidebar">
+            <h4>Sidebar</h4>
+        </aside>
+    </section>
+
+    <footer>
+        <div id="footer_info"> 
+            Powered by Me
+        </div>
+    </footer>
+    
+</body>
+</html>

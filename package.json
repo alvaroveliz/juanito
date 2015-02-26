@@ -7,13 +7,16 @@
     "name": "Alvaro Véliz",
     "email": "yo@alvaroveliz.cl"
   },
-  "contributors": [{
-    "name" : "Juan Pablo Sepúlveda",
-    "email" : "jpsepulvedaf@gmail.com"
-  }, {
-    "name" : "Hector Palma Tellez",
-    "email" : "hector@palmatellez.cl"
-  }],
+  "contributors": [
+    {
+      "name": "Juan Pablo Sepúlveda",
+      "email": "jpsepulvedaf@gmail.com"
+    },
+    {
+      "name": "Hector Palma Tellez",
+      "email": "hector@palmatellez.cl"
+    }
+  ],
   "repository": {
     "type": "git",
     "url": "git://github.com/alvaroveliz/juanito.git"
@@ -45,9 +48,12 @@
   "dependencies": {
     "cheerio": "^0.18.0",
     "commander": "^2.5.0",
-    "htmlparser2": "^3.8.2",
+    "connect": "^3.3.4",
     "inquirer": "^0.8.0",
     "ncp": "^1.0.1",
+    "process": "^0.10.0",
+    "serve-static": "^1.9.1",
+    "webshot": "^0.15.4",
     "wrench": "^1.5.8"
   }
 }

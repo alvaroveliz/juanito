@@ -1,0 +1,129 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    background: #f5f5f5;
+    color: #444;
+    font-family: 'Open Sans', 'Helvetica';
+}
+
+header {
+    width: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+header #top #logo {
+    width: 200px;
+    float: left;
+}
+
+header nav#menu {
+    width: 600px;
+    float: left;
+    overflow: hidden;
+}
+
+header nav#menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav#menu ul li {
+    display: inline-block;
+    overflow: hidden;
+}
+
+header nav#menu ul li a {
+    display: block;
+    background: #999;
+    color: #FFF;
+    text-decoration: none;
+    padding: 10px 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+header nav#menu ul li.current_menu_page a, header nav#menu ul li a:hover {
+    background: #444;
+    box-shadow: -1px -1px 2px #ddd;
+}
+
+section#content {
+    width: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+}   
+
+section#content article {
+    overflow: hidden;
+    background: #FFF;
+    padding: 20px;
+    box-shadow: 0 2px 5px #999;
+    margin: 5px 10px;
+}
+
+section#content #main_content {
+    width: 600px;
+    float: left;
+    overflow: hidden;
+}
+
+section#content #main_content h5 {
+    font-size: 2em;
+    padding: 0;
+    margin: 0;
+}
+
+section#content #main_content .date {
+    color: #AAA;
+}
+
+section#content #main_content p {
+    padding-bottom: 10px;
+    line-height: 1.8em;
+}
+
+section#content #main_content a {
+    color: #555;
+    text-decoration: none;
+    background: #999;
+    padding: 2px 5px;
+    font-size: 0.9em;
+    overflow: hidden;
+    display: inline-block;
+    color: #FFF;
+}
+
+section#content #main_content a:hover {
+    background: #444;
+}
+
+section#content #main_content a:visited {
+    background: #EEE;
+    color: #444;
+}
+
+section#content #main_content hr {
+    border: 1px solid #D4D4D4;
+}
+
+section#content aside {
+    width: 200px;
+    float: left;
+    overflow: hidden;
+    padding: 20px;
+}
+
+footer {
+    width: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+footer #footer_info {
+    padding-top: 40px;
+    color: #D5D5D5;
+}
