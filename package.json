@@ -7,6 +7,13 @@
     "name": "Alvaro Véliz",
     "email": "yo@alvaroveliz.cl"
   },
+  "contributors": [{
+    "name" : "Juan Pablo Sepúlveda",
+    "email" : "jpsepulvedaf@gmail.com"
+  }, {
+    "name" : "Hector Palma Tellez",
+    "email" : "hector@palmatellez.cl"
+  }],
   "repository": {
     "type": "git",
     "url": "git://github.com/alvaroveliz/juanito.git"
@@ -31,7 +38,7 @@
     "parse",
     "wp"
   ],
-  "preferGlobal": "true",
+  "preferGlobal": true,
   "bin": {
     "juanito": "bin/juanito.js"
   },
