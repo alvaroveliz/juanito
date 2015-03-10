@@ -1,0 +1,65 @@
+@import "../bower_components/perkins/_perkins";
+@import url(http://fonts.googleapis.com/css?family=Rancho,PT+Sans);
+
+@use-reset:              true;
+@use-core-structure:     true;
+@use-colors:             true;
+@use-tables:             false;
+@use-tables-styles:      false;
+@use-notables:           false;
+@use-class-grid:         false;
+@use-feedback:           false;
+@use-flex:               true;
+@use-forms:              false;
+@use-icons:              false;
+
+@use-helper-list-menu:   false;
+@use-helper-clearfix:    false;
+@use-helper-positions:   false;
+@use-helper-buttons:     false;
+@use-helper-dropdown:    false;
+@use-helper-tabs:        false;
+
+@bg: #212326;
+@font: 'Rancho', 'Helvetica', sans-serif;
+@sans: 'PT Sans', 'Helvetica', sans-serif;
+
+body {
+    background: @bg;    
+    font-family: @sans;
+}
+
+.container {
+    width: 920px;
+    margin: 0 auto;
+    
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: @font;
+}
+
+header {
+    .container {
+        .display-flex();
+        .flex-direction();
+        #juanito {
+            .flex(1 1 0);
+            text-align: right;
+            padding: 20px;
+        }
+        #juanito_slogan {
+            .flex(1 1 0);
+            padding: 20px;
+            h1 {
+                color: #DCFF6F;
+                font-size: 4.2em;
+            }        
+            #slogan {
+                color: #DFDFDF;
+                font-family: @sans;
+                font-weight: normal;
+            }
+        }
+    }
+}
