@@ -1,5 +1,5 @@
 @import "../bower_components/perkins/_perkins";
-@import url(http://fonts.googleapis.com/css?family=Rancho,PT+Sans);
+@import url(http://fonts.googleapis.com/css?family=Rancho,Cabin+Condensed);
 
 @use-reset:              true;
 @use-core-structure:     true;
@@ -22,7 +22,7 @@
 
 @bg: #212326;
 @font: 'Rancho', 'Helvetica', sans-serif;
-@sans: 'PT Sans', 'Helvetica', sans-serif;
+@sans: 'Cabin Condensed', 'Helvetica', sans-serif;
 
 body {
     background: @bg;    
@@ -37,6 +37,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
     font-family: @font;
+    font-weight: normal;
 }
 
 header {
@@ -59,6 +60,7 @@ header {
                 color: #DFDFDF;
                 font-family: @sans;
                 font-weight: normal;
+                font-size: 1.4em;
             }
         }
     }
