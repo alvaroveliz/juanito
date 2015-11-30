@@ -30,4 +30,4 @@
 
 **Website**
 
-[Check Out Our Web](http://alvaroveliz.github.io/juanito/)
+[Check Out Our Website](http://alvaroveliz.github.io/juanito/)
