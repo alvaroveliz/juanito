@@ -31,3 +31,5 @@
 **Website**
 
 [Check Out Our Website](http://alvaroveliz.github.io/juanito/)
+
+[![Juanito](http://alvaroveliz.github.io/juanito/assets/images/juanitosd2.png)]
