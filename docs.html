@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <title>Juanito, the helper - Convert your HTML Websites to WordPress Themes</title>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-default" role="navigation">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-menu">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="main-menu">
+                    <ul class="nav navbar-nav">
+                        <li><a href="index.html">Home</a></li>
+                        <li class="active"><a href="docs.html">Docs &amp; Examples</a></li>
+                        <li><a href="https://github.com/alvaroveliz/juanito">Github</a></li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container-fluid -->
+        </nav>
+    </header>
+    <section id="content">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <nav id="nav-left">
+                        <div class="text-center">
+                            <img src="assets/images/juanitosd1.png" width="40%" alt="">
+                        </div>
+                        <h3 class="logo logo-blue">Juanito</h3>
+                        <ul class="nav nav-pills nav-stacked" id="left-menu">
+                            <li><a href="#start">1. Start</a></li>
+                            <li><a href="#installation">2. Installation Instructions</a></li>
+                            <li><a href="#cli">3. Command Line Arguments</a></li>
+                            <li><a href="#examples">4. Usage Examples</a></li>
+                            <li><a href="#tags">5. Data Tags</a></li>
+                            <li><a href="#roadmap">6. Roadmap</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-lg-9">
+                    <!-- #start -->
+                    <div id="start">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">1. Start</h3>
+                            </div>
+                            <div class="panel-body">
+                                <h1>Welcome to Docs &amp; Examples</h1>
+                                <h3>Juanito will help you create a WordPress theme just by using your HTML files</h3>
+                                <ul>
+                                    <li><a href="#installation">Installation Instructions</a></li>
+                                    <li><a href="#cli">Command Line Arguments</a></li>
+                                    <li><a href="#examples">Usage Examples</a></li>
+                                    <li><a href="#tags">Data Tags</a></li>
+                                </ul>
+                                <p>
+                                    And if you want to know what's in the future of this project, check out our <a href="">Roadmap</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- #installation -->
+                    <div id="installation">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">2. Installation instructions</h3>
+                            </div>
+                            <div class="panel-body">
+                                <p>
+                                    First of all you need to have installed <a href="https://www.npmjs.com">npm</a> in order to install <code>juanito</code>.
+                                </p>
+                                <p>Then you have to put this on your console:</p>
+                                <pre>npm install juanito -g</pre>
+                                <p>After the installation, you can check the version of `juanito` by this command:</p>
+                                <pre>juanito --version</pre>
+                                <p>And that's all! Now you are ready to use `juanito` the helper.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- #cli -->
+                    <div id="cli">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">
+                                        3. Command Line Argumens
+                                        <small>For version <code>1.0.1</code></small>   
+                                    </h3>
+                            </div>
+                            <div class="panel-body">
+                                <h2 class="page-header page-first-header">General Arguments</h2>
+                                <dl>
+                                    <dt>Help
+                                        <kbd>[-h | --help]</kbd>
+                                    </dt>
+                                    <dd>
+                                        <p class="mute">Show how to use <code>juanito</code></p>
+                                        <pre>
+Usage: juanito [options]
+
+  Options:
+
+    -h, --help                       output usage information
+    -V, --version                    output the version number
+    -s, --source [source]            Set the template source (required)
+    -d, --destination [destination]  Set the template destination folder (required)
+    -i, --ignore-configuration       Ignore the theme configuration
+    -T, --post-thumbnails            Add post thumbnail support
+    -F, --post-formats               Add post formats support
+    -B, --custom-background          Add custom background support
+    -H, --custom-header              Add custom header support
+    -L, --auto-feed-links            Add automatic feed links support
+    -5, --html5                      Add HTML5 support
+    -T, --title-tag                  Add title tag support
+</pre>
+                                    </dd>
+                                    <dt>Version [-V | --version]</dt>
+                                    <dd>Show the installed version</dd>
+                                    <dt>Source (required)
+                                        <kbd>[-s &lt;directory&gt; | --source &lt;directory&gt;]</kbd>
+                                    </dt>
+                                    <dd>Sets the source directory where the `index.html` file of your site is.</dd>
+                                    <small>*This parameter is required*</small>
+                                    <dt>Destination (required)
+                                        <kbd>[-d &lt;directory&gt; | --destination &lt;directory&gt;]</kbd>
+                                    </dt>
+                                    <dd>Sets the source directory where the theme will be created, based on your source directory.</dd>
+                                    <small>*This parameter is required*</small>
+                                    <dt>Ignore Configuration
+                                        <kbd>[-i | --ignore-configuration]</kbd>
+                                    </dt>
+                                    <dd>This argument is used to ignore the theme configuration. Using this parameter, `juanito` will not ask the theme information.</dd>
+                                    <h2 class="page-header">Template Arguments</h2>
+                                    <dt>Post Thumbnails support
+                                        <kbd>[-T | --post-thumbnails]</kbd>
+                                    </dt>
+                                    <dd>This argument enables the post thumbnail support for your theme, adding in the `functions.php` file the post thumbnail support.</dd>
+                                    <dt>Post Formats support
+                                        <kbd>[-F | --post-formats]</kbd>
+                                    </dt>
+                                    <dd>This argument enables the post thumbnail support for your theme, adding in the `functions.php` file the post formats support.</dd>
+                                    <dt>Custom Background
+                                        <kbd>[-B | --custom-background]</kbd>
+                                    </dt>
+                                    <dd>This argument enables the custom background support for your theme, adding in the `functions.php` file the custom background support.</dd>
+                                    <dt>Custom Header
+                                        <kbd>[-H | --custom-header]</kbd>
+                                    </dt>
+                                    <dd>This argument enables the custom header support for your theme, adding in the `functions.php` file the custom header support.</dd>
+                                    <dt>Custom Header
+                                        <kbd>[-L | --auto-feed-links]</kbd>
+                                    </dt>
+                                    <dd>This argument enables the auto feed links support for your theme, adding in the `functions.php` file the auto feed links support.</dd>
+                                    <dt>HTML5
+                                        <kbd>[-5 | --html5]</kbd>
+                                    </dt>
+                                    <dd>This argument enables the HTML5 support for your theme, adding in the `functions.php` file the HTML5 support.</dd>
+                                    <dt>Title Tag
+                                        <kbd>[-T | --title-tag]</kbd>
+                                    </dt>
+                                    <dd>This argument enables the title tag support for your theme, adding in the `functions.php` file the title tag support.</dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- #examples -->
+                    <div id="examples">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">4. Usage Examples</h3>
+                            </div>
+                            <div class="panel-body">
+                                <h2 class="page-header page-first-header">Requirements</h2>
+                                <ul>
+                                    <li>A directory for the examples</li>
+                                    <li><code>juanito</code> installed</li>
+                                    <li>Use standard HTML5 tags like <code>header</code>, <code>footer</code>, <code>aside</code>, <code>nav</code>, <code>article</code></li>
+                                </ul>
+                                <h3 class="page-header">Example 1: Basic Structure <small>Follow the steps</small></h3>
+                                <p>
+                                    <ol>
+                                        <li>Open your terminal</li>
+                                        <li>Create a directory: <code>mkdir mysite</code></li>
+                                        <li>Create a file called <code>index.html</code> inside <code>mysite</code></li>
+                                        <li>
+                                            Create and edit a basic HTML5 structure like this example
+                                            <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Juanito Example&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+    &lt;header&gt;
+        This is the header
+    &lt;/header&gt;
+
+    &lt;section id="content"&gt;
+        This is the content
+    &lt;/section&gt;
+
+    &lt;footer&gt;
+        This is the footer
+    &lt;/footer&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+</pre> Consider to use tags like <code>header</code>, <code>section</code> and <code>footer</code>. Juanito use these tags in order to recognize and organize the template.
+                                        </li>
+                                        <li>Save the file as <code>index.html</code></li>
+                                        <li>In your terminal create the template based on your recently created <code>index.html</code> file using this command:
+                                            <kbd>juanito -s mysite -d mytheme</kbd>
+                                        </li>
+                                    </ol>
+                                </p>
+                                <h3 class="page-header">Example 2: Creating a Menu</h3>
+                                <p>
+                                    Using the basic structure example we are going to create a menu inside the <code>header</code> tag following these steps:
+                                </p>
+                                <ol>
+                                    <li>Edit <code>index.html</code> file</li>
+                                    <li>Add inside <code>header</code> this code:
+                                        <pre>
+&lt;nav id="menu"&gt;
+&lt;ul&gt;
+    &lt;li&gt;&lt;a href=""&gt;Home&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=""&gt;Page 1&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=""&gt;Page 2&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/nav&gt;
+</pre>
+                                    </li>
+                                    <li>Now, add the attribute <code>data-menu="main"</code> on the <code>nav</code> tag
+                                        <pre>
+&lt;nav id="menu" data-menu="main"&gt;
+...
+&lt;/nav&gt;
+</pre>
+                                    </li>
+                                    <li>Save the file and execute <code>juanito</code> again like this:
+                                        <kbd>juanito -s mysite -d mytheme -i</kbd>. This process will be executed ignoring the configuration.</li>
+                                </ol>
+                                <h3 class="page-header">Example 3: Creating a Sidebar</h3>
+                                <p>Using the second example, we are going to create a sidebar inside the <code>section#content</code> following these steps:</p>
+                                <ol>
+                                    <li>Edit the <code>index.html</code> file.</li>
+                                    <li>Add inside `section#content` this code:
+                                        <pre>
+&lt;section id="content"&gt;
+    &lt;aside&gt;
+    &lt;/aside&gt;
+&lt;/section&gt;
+</pre>
+                                    </li>
+                                    <li>Now, add the attribute <code>data-sidebar="home"</code> on the <code>aside</code> tag
+                                        <pre>
+&lt;aside data-menu="home"&gt;
+...
+&lt;/aside&gt;
+</pre>
+                                    </li>
+                                    <li>Save the file and execute <code>juanito</code> again like this:
+                                        <kbd>juanito -s mysite -d mytheme -i</kbd>. This process will be executed ignoring the configuration.</li>
+                                </ol>
+                                <h3 class="page-header">Example 4: The loop</h3>
+                                <p>Using the third example, we are going to create a sidebar inside the <code>section#content</code> following these steps:</p>
+                                <ol>
+                                    <li>Edit the <code>index.html</code> file.</li>
+                                    <li>Add inside <code>section#content</code> this code:
+                                        <pre>
+&lt;section id="content"&gt;
+    &lt;div id="articles"&gt;
+    &lt;/div&gt;
+    &lt;aside data-menu="home"&gt;
+    &lt;/aside&gt;
+&lt;/section&gt;
+</pre>
+                                    </li>
+                                    <li>Now, add an <code>article</code> element inside <code>div#articles</code> with the elements for the 'title', the 'excerpt', the 'date', the 'permalink' and the 'thumbnail' and use dummy texts.
+                                        <pre>
+&lt;h3&gt;Last 4 articles&lt;/h3&gt;
+&lt;div id="last_articles"&gt;
+    &lt;article&gt;
+        &lt;h4&gt;Title&lt;/h4&gt;
+        &lt;em&gt;Sat, 14 Feb 2014&lt;/em&gt;
+        &lt;div class="thumbnail"&gt;
+            &lt;img src="http://placehold.it/250x100" /&gt;
+        &lt;/div&gt;
+        &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua.&lt;/p&gt;
+        &lt;a href=""&gt;Read More&lt;/a&gt;
+    &lt;/article&gt;
+&lt;/div&gt;
+</pre>
+                                    </li>
+                                    <li>Now configure "the loop" adding <code>data-loop="last_articles"</code> and <code>data-loop-limit="4"</code> in the <code>article</code> element.
+                                        <pre>
+&lt;article data-loop="last_articles" data-loop-limit="4"&gt;
+...
+&lt;/article&gt;
+</pre>
+                                    </li>
+                                    <li>And now, we need to set the title, the date, the thumbnail, the excerpt and the permalink using:
+                                        <pre>
+&lt;article data-loop="last_articles" data-loop-limit="4"&gt;
+    &lt;h4 data-loop-title=""&gt;Title&lt;/h4&gt;
+    &lt;em data-loop-date=""&gt;Sat, 14 Feb 2014&lt;/em&gt;
+    &lt;div class="thumbnail" data-loop-thumbnail=""&gt;
+        &lt;img src="http://placehold.it/250x100" /&gt;
+    &lt;/div&gt;
+    &lt;p data-loop-excerpt=""&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&lt;/p&gt;
+    &lt;a href="" data-loop-permalink=""&gt;Read More&lt;/a&gt;
+&lt;/article&gt;
+</pre> For each element, every attribute must have the `data-loop` prefix.
+                                    </li>
+                                    <li>Save the file and execute <code>juanito</code> again like this:
+                                        <kbd>juanito -s mysite -d mytheme -i</kbd>. This process will be executed ignoring the configuration.</li>
+                                </ol>
+                                <h3 class="page-header">Example 5: Pages, Archive and Single files</h3>
+                                <p>About these elements, the only thing that you have to do is create the files with these names:
+                                    <ul>
+                                        <li>Use <code>page.html</code> or <code>page-&lt;name&gt;.html</code> in order to create page templates.</li>
+                                        <li>Use <code>archive.html</code> in order to create the archive template.</li>
+                                        <li>Use <code>single.html</code> to create the single post template.</li>
+                                    </ul>
+                                    In all these files you can use "the loop" data tags, explained on the 5th example
+                                </p>
+                                <h3 class="page-header">Full Example</h3>
+                                <p>Consider this structure :
+                                    <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Juanito Example&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+    &lt;header&gt;
+        &lt;nav id="menu" data-menu="main"&gt;
+            &lt;ul&gt;
+                &lt;li&gt;&lt;a href=""&gt;Home&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=""&gt;Page 1&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=""&gt;Page 2&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/nav&gt;
+    &lt;/header&gt;
+
+    &lt;section id="content"&gt;
+        &lt;h3&gt;Last 4 articles&lt;/h3&gt;
+        &lt;div id="articles"&gt;
+            &lt;article data-loop="last_articles" data-loop-limit="4"&gt;
+                &lt;h4 data-loop-title=""&gt;Title&lt;/h4&gt;
+                &lt;em data-loop-date=""&gt;Sat, 14 Feb 2014&lt;/em&gt;
+                &lt;div class="thumbnail" data-loop-thumbnail=""&gt;
+                    &lt;img src="http://placehold.it/250x100" /&gt;
+                &lt;/div&gt;
+                &lt;p data-loop-excerpt=""&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&lt;/p&gt;
+                &lt;a href="" data-loop-permalink=""&gt;Read More&lt;/a&gt;
+            &lt;/article&gt;
+        &lt;/div&gt;
+        &lt;aside data-menu="home"&gt;
+        &lt;/aside&gt;
+    &lt;/section&gt;
+
+    &lt;footer&gt;
+        This is the footer
+    &lt;/footer&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+</pre> Save the file and execute <code>juanito</code> again like this:
+                                    <kbd>juanito -s mysite -d mytheme</kbd>
+                                </p>
+                                <p>This process will be executed asking you for the theme configuration.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- #tags -->
+                    <div id="tags">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Data Tags <small>For version <code>1.0.1</code></small></h3>
+                            </div>
+                            <div class="panel-body">
+                                <h3 class="page-header page-first-header">Purpose</h3>
+                                <p>
+                                    <code>juanito</code> uses data-tags for element recogniton and also data to embed the right <code>PHP snippet</code>.
+                                </p>
+                                <p>This is the actual data-tag list</p>
+                                <h3 class="page-header">data-menu</h3>
+                                <p>Enable a <strong>menu</strong> called <strong>name</strong> in your theme.</p>
+                                <dl>
+                                    <dt>Syntax</dt>
+                                    <dd><code>data-menu="&lt;name&gt;"</code></dd>
+                                    <dt>Parameters</dt>
+                                    <dd>menu name</dd>
+                                    <dt>Usage</dt>
+                                    <dd><code>&lt;nav data-menu="main"&gt;&lt;/nav&gt;</code></dd>
+                                </dl>
+
+                                <h3 class="page-header">data-sidebar</h3>
+                                <p>Enable a <strong>sidebar</strong> called <strong>name</strong> in your for your widgets.</p>
+                                <dl>
+                                    <dt>Syntax</dt>
+                                    <dd><code>data-sidebar="&lt;name&gt;"</code></dd>
+                                    <dt>Parameters</dt>
+                                    <dd>sidebar name</dd>
+                                    <dt>Usage</dt>
+                                    <dd><code>&lt;aside data-sidebar="left_sidebar"&gt;&lt;/aside&gt;</code></dd>
+                                </dl>
+
+                                <h3 class="page-header">data-loop</h3>
+                                <p>Defines an element that will be used to display posts. "<a href="http://codex.wordpress.org/The_Loop">The Loop</a>" is a concept created by WordPress that shows posts in the current page. Every loop needs a name because every loop is a different query inside WordPress.</p>
+                                <dl>
+                                    <dt>Syntax</dt>
+                                    <dd><code>data-loop="&lt;name&gt;"</code></dd>
+                                    <dt>Parameters</dt>
+                                    <dd>loop name</dd>
+                                    <dt>Usage</dt>
+                                    <dd><code>&lt;article data-loop="last_posts"&gt;&lt;/article&gt;</code></dd>
+                                </dl>
+
+                                <h3 class="page-header">data-loop-limit</h3>
+                                <p>When the <code>data-loop</code> is used, you can limit the display using <code>data-loop-limit</code>.</p>
+                                <dl>
+                                    <dt>Syntax</dt>
+                                    <dd><code>data-loop-limit="&lt;number&gt;"</code></dd>
+                                    <dt>Parameters</dt>
+                                    <dd>number as limit</dd>
+                                    <dt>Dependency</dt>
+                                    <dd><code>data-loop</code></dd>
+                                    <dt>Usage</dt>
+                                    <dd><code>&lt;article data-loop="last_posts" data-loop-limit="10"&gt;&lt;/article&gt;</code></dd>
+                                </dl>
+
+                                <h3 class="page-header">data-loop-title</h3>
+                                <p>When the <code>data-loop</code> is used, you can define a tag as the title of the post.</p>
+                                <dl>
+                                    <dt>Syntax</dt>
+                                    <dd><code>data-loop-title=""</code></dd>
+                                    <dt>Parameters</dt>
+                                    <dd>none</dd>
+                                    <dt>Dependency</dt>
+                                    <dd><code>data-loop</code></dd>
+                                    <dt>Usage</dt>
+                                    <dd><code>&lt;h2 data-title=""&gt;&lt;/h2&gt;</code></dd>
+                                </dl>
+
+                                <h3 class="page-header">data-loop-content</h3>
+                                <p>When the <code>data-loop</code> is used, you can define a tag as the content of the post.</p>
+                                <dl>
+                                    <dt>Syntax</dt>
+                                    <dd><code>data-loop-content=""</code></dd>
+                                    <dt>Parameters</dt>
+                                    <dd>none</dd>
+                                    <dt>Dependency</dt>
+                                    <dd><code>data-loop</code></dd>
+                                    <dt>Usage</dt>
+                                    <dd><code>&lt;p data-content=""&gt;&lt;/p&gt;</code></dd>
+                                </dl>
+
+                                <h3 class="page-header">data-loop-excerpt</h3>
+                                <p>When the <code>data-loop</code> is used, you can define a tag as the excerpt of the post.</p>
+                                <dl>
+                                    <dt>Syntax</dt>
+                                    <dd><code>data-loop-excerpt=""</code></dd>
+                                    <dt>Parameters</dt>
+                                    <dd>none</dd>
+                                    <dt>Dependency</dt>
+                                    <dd><code>data-loop</code></dd>
+                                    <dt>Usage</dt>
+                                    <dd><code>&lt;p data-excerpt=""&gt;&lt;/p&gt;</code></dd>
+                                </dl>
+
+                                <h3 class="page-header">data-loop-date</h3>
+                                <p>When the <code>data-loop</code> is used, you can define a tag as the date of the post.</p>
+                                <dl>
+                                    <dt>Syntax</dt>
+                                    <dd><code>data-loop-date=""</code></dd>
+                                    <dt>Parameters</dt>
+                                    <dd>none</dd>
+                                    <dt>Dependency</dt>
+                                    <dd><code>data-loop</code></dd>
+                                    <dt>Usage</dt>
+                                    <dd><code>&lt;span data-date=""&gt;&lt;/span&gt;</code></dd>
+                                </dl>
+
+                                <h3 class="page-header">data-loop-permalink</h3>
+                                <p>When the <code>data-loop</code> is used, you can define a tag as the permalink of the post.</p>
+                                <dl>
+                                    <dt>Syntax</dt>
+                                    <dd><code>data-loop-permalink=""</code></dd>
+                                    <dt>Parameters</dt>
+                                    <dd>none</dd>
+                                    <dt>Dependency</dt>
+                                    <dd><code>data-loop</code></dd>
+                                    <dt>Usage</dt>
+                                    <dd><code>&lt;a data-permalink=""&gt;&lt;/a&gt;</code></dd>
+                                </dl>
+
+                                <h3 class="page-header">data-loop-thumbnail</h3>
+                                <p>When the <code>data-loop</code> is used, you can define a tag as the thumbnail of the post.</p>
+                                <dl>
+                                    <dt>Syntax</dt>
+                                    <dd><code>data-loop-thumbnail=""</code></dd>
+                                    <dt>Parameters</dt>
+                                    <dd>none</dd>
+                                    <dt>Dependency</dt>
+                                    <dd><code>data-loop</code></dd>
+                                    <dt>Usage</dt>
+                                    <dd><code>&lt;img src="" data-thumbnail=""/&gt;</code></dd>
+                                </dl>
+
+                                <h3 class="page-header">data-loop-category</h3>
+                                <p>When the <code>data-loop</code> is used, you can define a tag as the categories of the post.</p>
+                                <dl>
+                                    <dt>Syntax</dt>
+                                    <dd><code>data-loop-category=""</code></dd>
+                                    <dt>Parameters</dt>
+                                    <dd>none</dd>
+                                    <dt>Dependency</dt>
+                                    <dd><code>data-loop</code></dd>
+                                    <dt>Usage</dt>
+                                    <dd><code>&lt;div data-category=""&gt;&lt;/div&gt;</code></dd>
+                                </dl>
+
+                                <h3 class="page-header">data-loop-tags</h3>
+                                <p>When the <code>data-loop</code> is used, you can define a tag as the tags of the post.</p>
+                                <dl>
+                                    <dt>Syntax</dt>
+                                    <dd><code>data-loop-tags=""</code></dd>
+                                    <dt>Parameters</dt>
+                                    <dd>none</dd>
+                                    <dt>Dependency</dt>
+                                    <dd><code>data-loop</code></dd>
+                                    <dt>Usage</dt>
+                                    <dd><code>&lt;div data-tags=""&gt;&lt;/div&gt;</code></dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- #roadmap -->
+                    <div id="roadmap">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Roadmap</h3>
+                            </div>
+                            <div class="panel-body">
+                                <div class="row">
+                                    <div class="col-lg-8">
+                                        <h3 class="page-header page-first-header">Version 1.1</h3>
+                                        <ul>
+                                            <li>Custom templates</li>
+                                            <li>Non standard HTML5 tags</li>
+                                            <li>Screenshot preview</li>
+                                        </ul>
+                                        <h3 class="page-header">Version 1.2</h3>
+                                        <ul>
+                                            <li>Exporting data</li>
+                                            <li>Juanito caricature for logo</li>
+                                            <li>Website</li>
+                                        </ul>
+                                        <h3 class="page-header">Version 1.3</h3>
+                                        <ul>
+                                            <li>Juanito preview server</li>
+                                            <li>Dummy data for template testing</li>
+                                            <li>Deploy a WordPress installation</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <img src="assets/images/juaniton.png" width="100%" alt="">
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

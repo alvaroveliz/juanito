@@ -1,0 +1,67 @@
+@import '../../bower_components/bootstrap/less/bootstrap.less';
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://fonts.googleapis.com/css?family=Pacifico);
+
+@blue: #4BA4C5;
+
+// custom theme
+@gray-base: #222;
+@hr-border: #eee;
+@page-header-border-color: #eee;
+@brand-primary: @blue;
+@font-family-sans-serif: 'Open Sans', 'Helvetica', 'Arial', sans-serif;
+@navbar-default-color: #fff;
+@navbar-default-bg : transparent;
+@navbar-default-link-color: #fff;
+@navbar-default-link-active-color: #eee;
+@navbar-default-link-hover-bg: darken(@blue, 10%);
+@navbar-default-link-hover-color: #fff;
+@panel-default-border: #eee;
+@panel-default-heading-bg: #f9f9f9;
+@kbd-bg: #444;
+
+/* site */
+dl {
+    dt { margin-top: 15px; }
+    dd { padding: 5px 0; }
+}
+
+.logo {
+    font-family: 'Pacifico', cursive;
+    color: #fff;
+    font-size: 4em;
+    padding: 30px;
+    &.logo-blue {
+        color: @blue;
+    }
+}
+
+.page-first-header {
+    margin-top: 5px;
+}
+
+header {
+    background: @blue;
+    .navbar-nav {
+        width: 100%;
+        text-align: center;
+        > li {
+            float: none;
+            display: inline-block;
+        }
+    }
+}
+
+section#content {
+    .juanito_sd {
+        padding: 20px;
+    }
+    .description {
+        padding-top: 40px;
+    }
+    .affix {
+        position: fixed;
+        top:70px;
+        width:228px;
+    }
+}
