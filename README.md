@@ -32,4 +32,4 @@
 
 [Check Out Our Website](http://alvaroveliz.github.io/juanito/)
 
-[![Juanito](http://alvaroveliz.github.io/juanito/assets/images/juanitosd2.png)]
+<img src="http://alvaroveliz.github.io/juanito/assets/images/juanitosd2.png" width="30%" alt="Juanito">
