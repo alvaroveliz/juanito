@@ -28,6 +28,6 @@
 
   `npm -g install juanito`
 
-**Documentation**
+**Website**
 
-[Check Out Our Wiki](https://github.com/alvaroveliz/juanito/wiki)
+[Check Out Our Web](http://alvaroveliz.github.io/juanito/)
