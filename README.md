@@ -1,3 +1,4 @@
+<img src="http://alvaroveliz.github.io/juanito/assets/images/juanitosd2.png" width="20%" alt="Juanito">
 # Juanito, the helper
 
 ### Juanito will help you create a WordPress theme just by using your HTML files
@@ -31,5 +32,3 @@
 **Website**
 
 [Check Out Our Website](http://alvaroveliz.github.io/juanito/)
-
-<img src="http://alvaroveliz.github.io/juanito/assets/images/juanitosd2.png" width="30%" alt="Juanito">
